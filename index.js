@@ -1,9 +1,10 @@
-
+// Selecting necessary field
 const fieldContainer = document.getElementById('fieldContainer');
 const emailField = fieldContainer.children[1];
 const passwordField = fieldContainer.children[2];
 const loginButton = fieldContainer.children[3];
 
+// login validation
 loginButton.addEventListener('click',function(){
     const email = emailField.value;
     const password =passwordField.value;
@@ -14,5 +15,4 @@ loginButton.addEventListener('click',function(){
         alert('Please provide valid email password')
     }
 
-    // console.log(email,password)
 })
