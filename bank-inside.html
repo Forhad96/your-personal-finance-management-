@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Inside</title>
+    <!-- tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-5xl font-bold text-center mt-5">
+        Let's get some <span class="text-purple-600">Moooooooney</span>!!!
+      </h1>
+    </header>
+    <main>
+      <section class="mt-10">
+        <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto">
+          <div class="bg-orange-600 p-5 rounded-xl text-white">
+            <h4 class="text-3xl">Deposit</h4>
+            <h2 class="text-5xl">$<span id="depositDisplay">00</span></h2>
+          </div>
+          <div class="bg-lime-600 p-5 rounded-xl text-white">
+            <h4 class="text-3xl">Withdraw</h4>
+            <h2 class="text-5xl">$<span id="withdrawDisplay">00</span></h2>
+          </div>
+          <div class="bg-yellow-400 p-5 rounded-xl text-white">
+            <h4 class="text-3xl">Balance</h4>
+            <h2  class="text-5xl">$<span id="balanceDisplay">1240</span></h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-10">
+        <div  class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+          <div id="deposit" class="bg-cyan-700 px-5 py-10 rounded-xl text-white space-y-5">
+            <h4 class="text-3xl">Please Deposit</h4>
+            <input
+              class="block p-2 w-full rounded-lg text-cyan-700 font-bold"
+              type="text"
+              placeholder="$Amount your Deposit" />
+            <button class="bg-cyan-400 px-6 py-2 rounded-lg  hover:bg-emerald-700">Deposit</button>
+          </div>
+          <div id="withdraw" class="bg-emerald-700 px-5 py-10 rounded-xl text-white space-y-5 ">
+            <h4  class="text-3xl">Please Withdraw</h4>
+            <input
+              class="block  p-2 w-full rounded-lg text-emerald-700 font-bold"
+              type="text"
+              placeholder="$Amount your Withdraw" />
+            <button class="bg-cyan-400 px-6 py-2 rounded-lg  hover:bg-orange-800">Withdraw</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./bank-inside.js"></script>
+  </body>
+</html>
